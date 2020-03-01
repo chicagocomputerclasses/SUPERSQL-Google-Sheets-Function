@@ -9,7 +9,7 @@ Examples of Use:
 =SUPERSQL("SELECT l.a, l.b, r.price FROM ? l JOIN ? r ON l.b = r.b", data!A1:B,prices!A1:B)
 ```
 
-This code is a wrapper around AlaSQL (Andrey Gershun & Mathias Rangel Wulff) to implement a custom function for Google Sheets.
+This code is a wrapper around AlaSQL (by Andrey Gershun & Mathias Rangel Wulff) to implement a custom function for Google Sheets.
 https://github.com/agershun/alasql
 
 
