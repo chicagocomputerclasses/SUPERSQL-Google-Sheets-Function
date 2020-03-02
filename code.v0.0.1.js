@@ -1,3 +1,9 @@
+/*
+https://www.youtube.com/channel/UC8p19gUXJYTsUPEpusHgteQ/featured
+https://www.chicagocomputerclasses.com/youtube-learn-google-spreadsheets/
+Dependencies:
+https://github.com/agershun/alasql
+*/
 function SUPERSQL(sqlAsString,dataAsArray1,...dataAsArrays) {
   
   let sqlData = [arrayToObjectOfArrays(dataAsArray1)];
