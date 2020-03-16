@@ -13,16 +13,17 @@ function SUPERSQL(sqlAsString,dataAsArray1,...dataAsArrays) {
   
   let keys = new Set();
   res.forEach(r => Object.keys(r).forEach(k => keys.add(k)));
+  let keysArray = [...keys];
   
-  let newRes = res.map(r => [...keys].map(k => r[k]));
-  newRes.unshift([...keys]);
+  let newRes = res.map(r => keysArray.map(k => r[k]));
+  newRes.unshift(keysArray);
   
   return newRes;
   
 }
 
 
-var arrayToObjectOfArrays = function(data){
+let arrayToObjectOfArrays = function(data){
 
    data = data.filter(r => !r.every(c => c==""));
 
