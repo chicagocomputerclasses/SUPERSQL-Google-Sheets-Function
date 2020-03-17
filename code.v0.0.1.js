@@ -1,6 +1,10 @@
 /*
 https://www.youtube.com/channel/UC8p19gUXJYTsUPEpusHgteQ/featured
 https://www.chicagocomputerclasses.com/youtube-learn-google-spreadsheets/
+
+How to install:
+https://youtu.be/93JfUPdnLhE
+
 Dependencies:
 https://github.com/agershun/alasql
 */
