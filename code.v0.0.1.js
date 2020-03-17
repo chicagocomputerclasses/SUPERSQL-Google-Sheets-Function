@@ -39,7 +39,7 @@ let arrayToObjectOfArrays = function(data){
         
         r.forEach((cell,i) => {
           obj[headers[i]] = cell;
-        })
+        });
         
         return obj;
     
