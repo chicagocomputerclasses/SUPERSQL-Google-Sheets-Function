@@ -23,7 +23,7 @@ function SUPERSQL(sqlAsString,dataAsArray1,...dataAsArrays) {
   } else {
     // Return the array of results
     
-    //create unique list of columns ans tore in keysArray variable
+    //create unique list of columns and store in keysArray variable
     let keys = new Set();
     res.forEach(r => Object.keys(r).forEach(k => keys.add(k)));
     let keysArray = [...keys];
