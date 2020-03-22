@@ -10,6 +10,8 @@ https://github.com/agershun/alasql
 */
 function SUPERSQL(sqlAsString,dataAsArray1,...dataAsArrays) {
   
+  alasql.options.casesensitive = false;
+  
   let sqlData = [arrayToObjectOfArrays(dataAsArray1)];
   
   // If range/array convert to array of objects otherwise keep as is 
@@ -41,8 +43,10 @@ function SUPERSQL(sqlAsString,dataAsArray1,...dataAsArrays) {
 }
 
 
+// convert array of arrays ot array of objects
 let arrayToObjectOfArrays = function(data){
 
+   //remove blank rows
    data = data.filter(r => !r.every(c => c==""));
 
    let headers = data.shift();
@@ -52,8 +56,8 @@ let arrayToObjectOfArrays = function(data){
         let obj = {};
         
         r.forEach((cell,i) => {
-          obj[headers[i]] = cell;
-        })
+          obj[headers[i].toString().toLowerCase()] = cell;
+        });
         
         return obj;
     
