@@ -8,6 +8,15 @@ https://youtu.be/93JfUPdnLhE
 Dependencies:
 https://github.com/agershun/alasql
 */
+
+
+/**
+ * Run SQL Query on Google Sheets Data
+ * @customFunction
+ * SUPERSQL(sqlAsString,dataAsArray1,...dataAsArrays)
+ * @param {"SELECT * FROM ?"} sqlAsString SQL like statetment.
+ * @param {A1:G20} dataAsArray1 Range with first row as unique headers.
+ */
 function SUPERSQL(sqlAsString,dataAsArray1,...dataAsArrays) {
   
   alasql.options.casesensitive = false;
