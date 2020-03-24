@@ -8,6 +8,9 @@ Examples of Use:
 ```
 =SUPERSQL("SELECT l.a, l.b, r.price FROM ? l JOIN ? r ON l.b = r.b", data!A1:B,prices!A1:B)
 ```
+```
+=SUPERSQL("SELECT * FROM ? WHERE b > ?", data!A1:B6,D1)
+```
 
 How to install:
 https://youtu.be/93JfUPdnLhE
