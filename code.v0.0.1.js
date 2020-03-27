@@ -52,7 +52,7 @@ function SUPERSQL(sqlAsString,dataAsArray1,...dataAsArrays) {
 }
 
 
-// convert array of arrays ot array of objects
+// convert array of arrays to array of objects
 let arrayToObjectOfArrays = function(data){
 
    //remove blank rows
