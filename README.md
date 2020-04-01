@@ -1,5 +1,5 @@
 # SUPERSQL Google Sheets Function
-SUPERSQL function for Google Sheets
+SUPERSQL function for Google Sheets by https://www.chicagocomputerclasses.com/
 
 Examples of Use:
 ```
