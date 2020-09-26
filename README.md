@@ -12,6 +12,11 @@ Examples of Use:
 =SUPERSQL("SELECT * FROM ? WHERE b > ?", data!A1:B6,D1)
 ```
 
+Added sqltodate function to allow converting YYYY-MM-DD fromatted string to a date object
+```
+=SUPERSQL("SELECT product, qty, sqltodate('2020-09-26') FROM ?", data!A1:B6)
+```
+
 How to install:
 https://youtu.be/93JfUPdnLhE
 
