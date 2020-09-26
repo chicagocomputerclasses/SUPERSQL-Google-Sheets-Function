@@ -20,6 +20,10 @@ https://github.com/agershun/alasql
 function SUPERSQL(sqlAsString,dataAsArray1,...dataAsArrays) {
   
   alasql.options.casesensitive = false;
+  alasql.fn.sqltodate = function(v) {
+      let [year,month,day] = v.split("-");
+      return new Date(year,month-1,day,0,0,0);
+  }  
   
   let sqlData = [arrayToObjectOfArrays(dataAsArray1)];
   
